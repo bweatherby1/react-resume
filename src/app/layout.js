@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import NavBar from '../components/NavBar';
+import Footer from '../components/footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/globals.css';
@@ -7,14 +8,20 @@ import '@/styles/globals.css';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+      }}>
         <NavBar />
-        <div className="container">{children}</div>
+        <main style={{ flex: '1 0 auto' }}>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
 }
-
 RootLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
