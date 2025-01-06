@@ -8,6 +8,8 @@ function Home() {
     <div style={{ textAlign: 'center', maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
       <h1>Hi, my name is Brad Weatherby, Full Stack Software Developer</h1>
       
+      <hr style={{ width: '85%', margin: '2rem auto' }} />
+
       <div style={{ 
         display: 'flex', 
         alignItems: 'center', 
@@ -23,7 +25,7 @@ function Home() {
           style={{
             borderRadius: '50%',
             objectFit: 'cover',
-            objectPosition: '0 0', // Perfect micro-adjustment
+            objectPosition: '0 0',
           }}
         />
         <div style={{ maxWidth: '600px', textAlign: 'left' }}>
@@ -36,9 +38,84 @@ function Home() {
 
       <div>
         <h3>Projects</h3>
-        <div><h4>Putter</h4></div>
-        <div><h4>Let's Eat</h4></div>
-        <div><h4>Tech Stack</h4></div>
+        <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center' }}>
+  <div style={{ 
+    width: '400px', 
+    display: 'flex', 
+    flexDirection: 'column',
+    justifyContent: 'space-between' 
+  }}>
+    <h4 style={{ textDecoration: 'underline' }}>Putter</h4>
+    <Image
+      src="/images/PutterLogin.png"
+      alt="Putter Login"
+      width={400}
+      height={300}
+      style={{
+        objectFit: 'contain',
+        objectPosition: 'center',
+        width: '100%',
+        height: 'auto',
+      }}
+    />
+  </div>
+  <div style={{ 
+    border: '2px solid #ccc', 
+    padding: '1.2rem', 
+    width: '400px',
+    height: '400px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '1.4rem',
+    lineHeight: '1.6',
+    textAlign: 'justify'
+  }}>
+    Putter is a tinder style golf application desgined to let the user find a playing partner nearby with matching playing times, message that partner and past matches, add and select from courses added by other users. This application was built entirely on the front end using React
+  </div>
+</div>
+        <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center' }}>
+  <div style={{ 
+    width: '400px', 
+    display: 'flex', 
+    flexDirection: 'column',
+    justifyContent: 'space-between' 
+  }}>
+    <h4 style={{ textDecoration: 'underline' }}>Let's Eat!</h4>
+    <Image
+      src="/images/PutterLogin.png"
+      alt="Putter Login"
+      width={400}
+      height={300}
+      style={{
+        objectFit: 'contain',
+        objectPosition: 'center',
+        width: '100%',
+        height: 'auto',
+      }}
+    />
+  </div>
+  <div style={{ 
+    border: '2px solid #ccc', 
+    padding: '1.2rem', 
+    width: '400px',
+    height: '400px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '1.4rem',
+    lineHeight: '1.6',
+    textAlign: 'justify'
+  }}>
+    Lets Eat aims to lkjljkljlkjl;kj;lkjlk;jlj;khiu hiluhliuh liuh uk hiu hklh ukh liukh liuk hlukli huklh iukh ilul hiukl hukl ihu hlu hilu hiluliby ybh uykb ukybjhkgyu l guykb ugykb ubyk uybk uyb
+  </div>
+</div>
+      </div>
+
+      <hr style={{ width: '85%', margin: '2rem auto' }} />
+
+      <div>
+        <h3>Tech Stack</h3>
       </div>
     </div>
   );
