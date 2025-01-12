@@ -29,7 +29,7 @@ export const generateMetadata = async ({ params }) => {
   const { slug } = params;
 
   return {
-    title: `TEMPLATE - ${slug || 'HOME'}`,
+    title: `Brad Weatherby -Resume`,
     description: `This is a dynamically generated description for ${slug}.`,
     keywords: [`${slug}`, 'dynamic', 'page'],
     openGraph: {
