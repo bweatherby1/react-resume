@@ -1,8 +1,8 @@
 /* eslint-disable */
-
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 function Footer() {
   const scrollToTop = () => {
@@ -26,17 +26,18 @@ function Footer() {
             >
               &#8682;
             </span>
-            <p>© {new Date().getFullYear()} Brad Weatherby - NSS Template</p>
+            <p>© {new Date().getFullYear()} Brad Weatherby</p>
             <div className="social-links">
-              <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener noreferrer" className="mx-2">
-                GitHub
+              <a href="https://github.com/bweatherby1" target="_blank" rel="noopener noreferrer" className="mx-2">
+                <Image src="/images/githublogo.png" alt="GitHub" width={30} height={30} />
               </a>
-              <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener noreferrer" className="mx-2">
-                LinkedIn
+              <a href="https://www.linkedin.com/in/brad-weatherby1/" target="_blank" rel="noopener noreferrer" className="mx-2">
+                <Image src="/images/linkedinlogo.png" alt="LinkedIn" width={30} height={30} />
               </a>
-              <a href="mailto:your.email@example.com" className="mx-2">
-                Email
-              </a>
+              <a href="mailto:bweatherby1@gmail.com" target="_blank" rel="noopener noreferrer">
+  <img src="/images/gmaillogo.png" alt="Email" width={30} height={30} style={{ cursor: 'pointer' }} />
+</a>
+
             </div>
           </div>
         </div>

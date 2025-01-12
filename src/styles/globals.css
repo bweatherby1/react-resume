@@ -272,3 +272,26 @@ body {
 .profile-button:hover {
   transform: scale(1.05);
 }
+
+.tech-stack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tech-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.tech-logo {
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.tech-logo:hover {
+  transform: scale(1.1);
+}
