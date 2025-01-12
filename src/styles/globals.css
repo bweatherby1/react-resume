@@ -1,13 +1,11 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
-/* Existing gradient animation */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* New animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -25,30 +23,184 @@ body {
 
 .section {
   position: relative;
-  padding: 4rem 0;
+  padding: 40px 20px;
   z-index: 1;
 }
+  .white-bg {
+    background: white;
+    color: black;
+    min-height: 600px;
+  }
 
-.gradient-bg {
+  .gradient-bg {
+    background: linear-gradient(-45deg, #2a5298, #4286f4, #3674db, #2a5298);
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease-in-out infinite;
+    color: white;
+    min-height: 800px;
+  }
+
+
+.title-container {
+  text-align: center;
+}
+
+.lightning-emoji {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.main-title {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  line-height: 2;
+  font-size: 3.5rem;
+}
+
+.gradient-text {
   background: linear-gradient(-45deg, #2a5298, #4286f4, #3674db, #2a5298);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
-  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 4rem;
+}
+  .section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-top: 4rem; 
+  }
+.project-title {
+  margin-bottom: 1rem;
 }
 
-.white-bg {
-  background: white;
-  color: black;
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+  .profile-image {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 0;
+    aspect-ratio: 1/1;
+  }
+
+  .white-bg {
+    background: #f5f5f5;
+    color: black;
+    min-height: 600px;
+    position: relative;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -75px;  /* Increased from -50px to move section up */
+  }
+
+  .white-bg .project-container {
+    padding-top: 2rem;  /* Reduced padding to bring header closer to top */
+  }
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 2rem auto;
 }
 
-.divider {
+.profile-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+  .about-text {
+    flex: 3;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 2rem;
+    color: #f5f5f5;
+  }
+.section {
   position: relative;
-  height: 100px;
-  transform: skewY(-4deg);
-  z-index: 2;
-  background: white;
-  margin-top: -50px;
-  margin-bottom: -50px;
+  padding: 40px 20px;
+  z-index: 1;
+}
+  .project-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+
+  .section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .project-card:first-of-type {
+    margin-top: 0;
+  }
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.project-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.project-content {
+  width: 50%;
+}
+.project-title {
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-button {
+  padding: 0.5rem 1rem;
+  background-color: #1E3A8A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 45%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .scroll-animate {
@@ -62,12 +214,61 @@ body {
   transform: translateY(0);
 }
 
-/* Maintain your existing styles */
-.watch-event {
-  width: 100%;
-  border: 2px solid red;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  margin: 30px 0;
+.profile-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+    .divider {
+      position: relative;
+      height: 100px;
+      transform: skewY(-4deg);
+      z-index: 2;
+      background: #f5f5f5;
+      margin-top: -50px;
+      margin-bottom: -50px;
+      width: 100vw;
+    }
+
+    .gradient-bg + .divider {
+      height: 50px;
+      margin-top: -25px;
+      margin-bottom: -25px;
+    }
+
+  .project-card:not(:last-child) {
+    border-bottom: 3px solid #2a5298;
+    border-radius: 2px;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.profile-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #1E3A8A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.profile-button:hover {
+  transform: scale(1.05);
 }
