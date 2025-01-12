@@ -153,11 +153,29 @@ function Home() {
             </div>
           </div>
         </div>
-          
         <div className="divider"></div>
         <div className="section gradient-bg scroll-animate">
           <div className="project-container">
             <h3 className="section-heading">Tech Stack</h3>
+              <div className="tech-stack-container">
+                <div className="tech-row">
+                  <Image src="/images/pythonlogo.png" alt="Python Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/reactlogo.png" alt="React Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/jslogo.png" alt="JavaScript Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/html5logo.png" alt="HTML5 Logo" width={150} height={150} className="tech-logo" />
+                </div>
+                <div className="tech-row">
+                  <Image src="/images/css3logo.png" alt="CSS3 Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/djangologo.png" alt="Django Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/nextjslogo.png" alt="Next.js Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/sqllogo.png" alt="SQL Logo" width={150} height={150} className="tech-logo" />
+                </div>
+                <div className="tech-row">
+                  <Image src="/images/Bootstrap_logo.svg.png" alt="Bootstrap Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/githublogo.png" alt="GitHub Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/postmanlogo.png" alt="Postman Logo" width={150} height={150} className="tech-logo" />
+                </div>
+              </div>
           </div>
         </div>
       </div>
