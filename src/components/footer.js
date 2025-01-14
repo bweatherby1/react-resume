@@ -24,20 +24,19 @@ function Footer() {
                 marginRight: '10px',
               }}
             >
-              &#8682;
+              ⇪
             </span>
             <p>© {new Date().getFullYear()} Brad Weatherby</p>
-            <div className="social-links">
-              <a href="https://github.com/bweatherby1" target="_blank" rel="noopener noreferrer" className="mx-2">
+            <div className="social-links d-flex justify-content-between px-5">
+              <a href="https://github.com/bweatherby1" target="_blank" rel="noopener noreferrer">
                 <Image src="/images/githublogo.png" alt="GitHub" width={30} height={30} />
               </a>
-              <a href="https://www.linkedin.com/in/brad-weatherby1/" target="_blank" rel="noopener noreferrer" className="mx-2">
+              <a href="https://www.linkedin.com/in/brad-weatherby1/" target="_blank" rel="noopener noreferrer">
                 <Image src="/images/linkedinlogo.png" alt="LinkedIn" width={30} height={30} />
               </a>
               <a href="mailto:bweatherby1@gmail.com" target="_blank" rel="noopener noreferrer">
-  <img src="/images/gmaillogo.png" alt="Email" width={30} height={30} style={{ cursor: 'pointer' }} />
-</a>
-
+                <Image src="/images/emailLogoNBG.png" alt="Email" width={30} height={30} style={{ cursor: 'pointer' }} />
+              </a>
             </div>
           </div>
         </div>
