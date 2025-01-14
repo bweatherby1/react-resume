@@ -99,11 +99,11 @@ body,
   }
 
   .white-bg > .project-container > .section-heading {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .gradient-bg:last-child .section-heading {
-    margin-top: -2rem;
+    margin-top: -1rem;
   }
 .project-title {
   margin-bottom: 1rem;
@@ -156,6 +156,7 @@ body,
   max-width: 1400px;
   margin: 2rem auto;
   padding: 0 clamp(1rem, 3vw, 3rem);
+  padding-bottom: 3rem;
 }
 
 .profile-section {
@@ -164,7 +165,10 @@ body,
   align-items: flex-end;
   padding-top: 20px;
   padding-right: 40px;
+  padding-bottom: 3rem;
 }
+
+
 
 .about-text {
   width: 80%;
