@@ -1,10 +1,14 @@
 /* eslint-disable */
 'use client'
-import { useEffect } from 'react';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactPopup from '../components/ContactPopup';
 
 function Home() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -42,17 +46,20 @@ function Home() {
             <div className="about-container">
               <div className="profile-section">
                 <Image
-                  src="/images/Profile1.jpg"
+                  src="/images/blueSteeleStare.jpg"
                   alt="Brad Weatherby Profile"
                   width={400}
                   height={400}
                   className="profile-image"
                 />
                 <div className="profile-buttons">
-                  <button className="profile-button">Resume</button>
-                  <button className="profile-button">Contact</button>
+                  <Link href="/documents/brad-weatherby-resume.pdf" target="_blank">
+                    <button className="profile-button">Resume</button>
+                  </Link>
+                  <button className="profile-button" onClick={() => setIsContactOpen(true)}>Contact</button>
                 </div>
               </div>
+              <ContactPopup isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
               <div className="about-text">
                 <p>
                   As a full-stack developer and recent Nashville Software School graduate, I bring a unique blend of technical expertise and real-world experience. My journey began with a passion for technology, gaming, and problem-solving, which initially led me into the garage door industry. Over two years, I built and operated my own garage door business, mastering everything from client relationships and operational efficiency to practical problem-solving. This hands-on experience taught me invaluable lessons in self-reliance, precision, and delivering reliable solutions - skills that translate perfectly into software development.
@@ -76,12 +83,23 @@ function Home() {
             <div className="project-card">
               <div className="project-content">
                 <h4 className="project-title">Putter</h4>
+                <Image
+                  src="/images/favicon.ico"
+                  alt="Putter Icon"
+                  width={60}
+                  height={60}
+                  className="project-icon"
+                />
                 <p className="project-description">
-                  Putter is a tinder style golf application desgined to let the user find a playing partner nearby with matching playing times, message that partner and past matches, add and select from courses added by other users. This application was built entirely on the front end using React
+                  Putter is a tinder style golf application desgined to let the user find a playing partner nearby with matching playing times, message that partner and past matches, add and select from courses added by other users. This application was built entirely on the front end using React, Next.js, and Bootstrap, and is desployed on Netlify.
                 </p>
                 <div className="button-container">
+                <Link href="https://fairwayfriends.netlify.app/" target="_blank">
                   <button className="project-button">Live Page</button>
-                  <button className="project-button">Git Repo</button>
+                </Link>
+                <Link href="https://github.com/bweatherby1/friends" target="_blank">
+                  <button className="project-button">Repo</button>
+                </Link>
                 </div>
               </div>
               <Image
@@ -94,25 +112,36 @@ function Home() {
             </div>
 
             <div className="project-card">
-              <div className="project-content">
-                <h4 className="project-title">Let's Eat!</h4>
-                <p className="project-description">
-                  Lets Eat aims to lkjljkljlkjl;kj;lkjlk;jlj;khiu hiluhliuh liuh uk hiu hklh ukh liukh liuk hlukli huklh iukh ilul hiukl hukl ihu hlu hilu hiluliby ybh uykb ukybjhkgyu l guykb ugykb ubyk uybk uyb
-                </p>
-                <div className="button-container">
-                  <button className="project-button">Live Page</button>
-                  <button className="project-button">Git Repo</button>
-                </div>
-              </div>
               <Image
-                src="/images/PutterLogin.png"
+                src="/images/letsEatLogin.png"
                 alt="Putter Login"
                 width={500}
                 height={400}
                 className="project-image"
               />
+              <div className="project-content">
+                <h4 className="project-title">Let's Eat!</h4>
+                <Image
+                  src="/images/letsEatLogo.png"
+                  alt="Lets Eat Icon"
+                  width={60}
+                  height={60}
+                  className="project-icon"
+                />
+                <p className="project-description">
+                  Lets Eat aims to eliminate the time spent picking a restaurant by letting users add their favorite restaurants to a list and then randomly selecting one of the restaurants via a random spinner. This both saves time and adds a bit of fun to the process. Built using React, Django, and Python and deployed with Railway.(Currently in Early Deploy)
+                </p>
+                <div className="button-container">
+                  <Link href="https://clientletseat-production.up.railway.app" target="_blank">
+                    <button className="project-button">Live Page</button>
+                  </Link>
+                  <Link href="https://github.com/bweatherby1-let-s-eat" target="_blank">
+                    <button className="project-button">Repo</button>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="project-card">
+            {/* <div className="project-card">
               <div className="project-content">
                 <h4 className="project-title">Putter</h4>
                 <p className="project-description">
@@ -130,9 +159,9 @@ function Home() {
                 height={400}
                 className="project-image"
               />
-            </div>
+            </div> */}
 
-            <div className="project-card">
+            {/* <div className="project-card"> 
               <div className="project-content">
                 <h4 className="project-title">Let's Eat!</h4>
                 <p className="project-description">
@@ -150,7 +179,7 @@ function Home() {
                 height={400}
                 className="project-image"
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="divider"></div>
