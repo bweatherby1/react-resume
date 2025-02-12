@@ -62,7 +62,7 @@ function Home() {
               <ContactPopup isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
               <div className="about-text">
                 <p>
-                  As a full-stack developer and recent Nashville Software School graduate, I bring a unique blend of technical expertise and real-world experience. My journey began with a passion for technology, gaming, and problem-solving, which initially led me into the garage door industry. Over two years, I built and operated my own garage door business, mastering everything from client relationships and operational efficiency to practical problem-solving. This hands-on experience taught me invaluable lessons in self-reliance, precision, and delivering reliable solutions - skills that translate perfectly into software development.
+                  As a full-stack developer and recent Nashville Software School graduate, I bring a unique blend of technical expertise and real-world experience. My journey began with a passion for technology, gaming, and problem-solving, which initially led me into the garage door industry and then to my own business. Over the last two years I have built and operated my garage door business, mastering everything from client relationships and operational efficiency to practical problem-solving. This hands-on experience taught me invaluable lessons in self-reliance, precision, and delivering reliable, real world solutions - skills that translate perfectly into software development.
                 </p>
 
                 <p>
