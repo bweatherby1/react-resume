@@ -114,7 +114,7 @@ function Home() {
             <div className="project-card">
               <Image
                 src="/images/letsEatLogin.png"
-                alt="Putter Login"
+                alt="Lets Eat Login"
                 width={500}
                 height={400}
                 className="project-image"
@@ -141,45 +141,35 @@ function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="project-card">
-              <div className="project-content">
-                <h4 className="project-title">Putter</h4>
-                <p className="project-description">
-                  Putter is a tinder style golf application...
-                </p>
-                <div className="button-container">
-                  <button className="project-button">Live Page</button>
-                  <button className="project-button">Git Repo</button>
-                </div>
-              </div>
-              <Image
-                src="/images/PutterLogin.png"
-                alt="Putter Login"
-                width={500}
-                height={400}
-                className="project-image"
-              />
-            </div> */}
 
-            {/* <div className="project-card"> 
+            <div className="project-card">
               <div className="project-content">
-                <h4 className="project-title">Let's Eat!</h4>
+                <h4 className="project-title">Catch Me If You Can</h4>
+                <Image
+                  src="/images/Black_viper.png"
+                  alt="Catch Me If You Can Icon"
+                  width={60}
+                  height={60}
+                  className="project-icon"
+                />
                 <p className="project-description">
-                  Lets Eat aims to...
+                  A fast-paced Unity car chase game where players must dodge police cars and survive as long as possible. Built in Unity with C# and deployed on itch.io.
                 </p>
                 <div className="button-container">
-                  <button className="project-button">Live Page</button>
-                  <button className="project-button">Git Repo</button>
+                  <Link href="https://bweatherby1.itch.io/catch-me-if-you-can" target="_blank">
+                    <button className="project-button">Play on Itch.io</button>
+                  </Link>
                 </div>
               </div>
               <Image
-                src="/images/PutterLogin.png"
-                alt="Putter Login"
+                src="/images/catchScreenshot.png"
+                alt="Catch Me If You Can Screenshot"
                 width={500}
                 height={400}
                 className="project-image"
               />
-            </div> */}
+            </div>
+
           </div>
         </div>
         <div className="divider"></div>
@@ -203,6 +193,10 @@ function Home() {
                   <Image src="/images/Bootstrap_logo.svg.png" alt="Bootstrap Logo" width={150} height={150} className="tech-logo" />
                   <Image src="/images/githublogo.png" alt="GitHub Logo" width={150} height={150} className="tech-logo" />
                   <Image src="/images/postmanlogo.png" alt="Postman Logo" width={150} height={150} className="tech-logo" />
+                  <Image src="/images/csharplogo.png" alt="Postman Logo" width={150} height={150} className="tech-logo" />
+                </div>
+                <div className="tech-row">
+                  <Image src="/images/unitylogo.png" alt="Bootstrap Logo" width={150} height={150} className="tech-logo" />
                 </div>
               </div>
           </div>

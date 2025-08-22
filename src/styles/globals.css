@@ -168,8 +168,6 @@ body,
   padding-bottom: 3rem;
 }
 
-
-
 .about-text {
   width: 80%;
   line-height: 1.4;
@@ -629,7 +627,6 @@ body,
     max-width: 500px;
   }
 
-
 /* Ensure footer stays within content bounds */
 .gradient-bg {
   width: 100%;
@@ -651,4 +648,35 @@ body,
     width: 100%;
     max-width: 800px;
   }
+}
+
+/* =========================
+   OVERRIDES FOR TECH STACK
+   ========================= */
+
+/* Push the final Tech Stack block farther down from Projects */
+.gradient-bg:last-of-type .project-container {
+  padding-top: 6rem;
+}
+
+.gradient-bg:last-of-type .section-heading {
+  margin-top: 2rem !important;  /* override earlier negative/top margins */
+  margin-bottom: 3rem;
+}
+
+/* Make all tech logos visually uniform (fixes smaller C# logo issue) */
+.tech-row {
+  align-items: center; /* vertical centering across the row */
+}
+
+.tech-logo {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: contain !important;
+  display: inline-block;
+  /* optional polish:
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 6px;
+  */
 }
